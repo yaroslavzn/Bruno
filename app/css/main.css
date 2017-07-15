@@ -856,4 +856,10 @@ h1, h2, h3, h4, h5, h6 {
           border-radius: 3px;
   padding: 3px 5px;
   display: inline-block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .services-btn:hover {
+    background-color: #6c7d87;
+    color: #ffffff;
+    border-color: transparent; }
