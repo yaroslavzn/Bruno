@@ -458,7 +458,8 @@ th {
 
 /* adjustment vars */
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  color: #090a0e; }
   @media screen and (max-width: 1200px) {
     html {
       font-size: 16px; } }
@@ -500,6 +501,14 @@ li {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
+
+.section-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #090a0e;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: -0.7px; }
 
 .header {
   min-height: 651px;
@@ -792,3 +801,59 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
     color: #6c7d87;
     margin: 0; }
+
+.services {
+  min-height: 645px;
+  background-image: url("../img/services-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px; }
+
+.section-title--services {
+  margin-bottom: 35px; }
+
+.price-wrap {
+  width: 82.89%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.price__list {
+  width: 38.09%;
+  margin-bottom: 50px; }
+
+.price__item {
+  font-size: 1.875rem;
+  border-bottom: 1px solid #335263;
+  display: table;
+  width: 100%;
+  padding-bottom: 15px;
+  margin-bottom: 12px; }
+
+.price__item-name {
+  display: table-cell; }
+
+.price__item-count {
+  display: table-cell;
+  text-align: right; }
+
+.services-btn {
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #090a0e;
+  border: 1px solid #335263;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 3px 5px;
+  display: inline-block;
+  margin: 0 auto; }
