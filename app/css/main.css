@@ -621,10 +621,10 @@ h1, h2, h3, h4, h5, h6 {
 .slide__img {
   width: 100%; }
 
-.slick-dots {
+.header .slick-dots {
   width: 5.87%;
   margin: 0 auto; }
-  .slick-dots li {
+  .header .slick-dots li {
     width: 12px;
     height: 12px;
     border: 1px solid #e4e0e0;
@@ -633,21 +633,21 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     margin-right: 14px;
     cursor: pointer; }
-    .slick-dots li:last-child {
+    .header .slick-dots li:last-child {
       margin-right: 0; }
-    .slick-dots li button {
+    .header .slick-dots li button {
       display: none; }
-  .slick-dots .slick-active {
+  .header .slick-dots .slick-active {
     background-color: #e4e0e0; }
 
-.slick-slider {
+.header .slick-slider {
   position: relative;
   margin: 0 auto; }
 
-.slick-list {
+.header .slick-list {
   margin-bottom: 175px; }
 
-.slick-arrow {
+.header .slick-arrow {
   font-size: 0;
   height: 50px;
   width: 50px;
@@ -658,10 +658,10 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 10;
   margin-top: -50px; }
 
-.slick-disabled {
+.header .slick-disabled {
   border-color: #6c7d87; }
 
-.slick-prev {
+.header .slick-prev {
   -webkit-transform: rotate(45deg) translateY(-50%);
       -ms-transform: rotate(45deg) translateY(-50%);
           transform: rotate(45deg) translateY(-50%);
@@ -670,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top: none;
   border-right: none; }
 
-.slick-next {
+.header .slick-next {
   -webkit-transform: rotate(45deg) translateY(-50%);
       -ms-transform: rotate(45deg) translateY(-50%);
           transform: rotate(45deg) translateY(-50%);
@@ -678,3 +678,117 @@ h1, h2, h3, h4, h5, h6 {
   right: 24px;
   border-left: none;
   border-bottom: none; }
+
+.features {
+  min-height: 650px;
+  background-image: url("../img/features-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 64px; }
+
+.features-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 35px; }
+
+.features__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60.8%;
+  margin-bottom: 50px; }
+
+.features__item {
+  width: 29.6%;
+  padding: 25px 10px;
+  border: 1px solid #667882;
+  position: relative;
+  min-height: 200px;
+  position: relative; }
+
+.features__item--up {
+  border-top: none; }
+  .features__item--up::after {
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: #667882;
+    height: 1px;
+    left: 0;
+    right: 70%;
+    top: 0; }
+  .features__item--up::before {
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: #667882;
+    height: 1px;
+    left: 70%;
+    right: 0;
+    top: 0; }
+
+.features__item--down {
+  border-bottom: none; }
+  .features__item--down::after {
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: #667882;
+    height: 1px;
+    left: 0;
+    right: 70%;
+    bottom: 0; }
+  .features__item--down::before {
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: #667882;
+    height: 1px;
+    left: 70%;
+    right: 0;
+    bottom: 0; }
+  .features__item--down .features__item-pic {
+    top: 100%; }
+
+.features__item-pic {
+  width: 60px;
+  height: 16px;
+  position: absolute;
+  background-image: url("../img/mustache.png");
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
+  margin-top: -7px; }
+
+.features__item-desc p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #090a0e; }
+
+.features__text {
+  width: 65%;
+  text-align: right; }
+  .features__text p {
+    font-size: 1.5rem;
+    color: #6c7d87;
+    margin: 0; }

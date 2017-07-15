@@ -114,72 +114,73 @@
 .slide__img {
   width: 100%;
 }
-
-.slick-dots {
-  width: 5.87%;
-  margin: 0 auto;
-  li {
-    width: 12px;
-    height: 12px;
-    border: 1px solid #e4e0e0;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 14px;
-    cursor: pointer;
-    &:last-child {
-      margin-right: 0;
+.header {
+  .slick-dots {
+    width: 5.87%;
+    margin: 0 auto;
+    li {
+      width: 12px;
+      height: 12px;
+      border: 1px solid #e4e0e0;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 14px;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+      }
+      button {
+        display: none;
+      }
     }
-    button {
-      display: none;
+    .slick-active {
+      background-color: #e4e0e0;
     }
   }
-  .slick-active {
-    background-color: #e4e0e0;
+
+  .slick-slider {
+    position: relative;
+    //width: 90%;
+    margin: 0 auto;
   }
-}
 
-.slick-slider {
-  position: relative;
-  //width: 90%;
-  margin: 0 auto;
-}
+  .slick-list {
+    margin-bottom: 175px;
+  }
 
-.slick-list {
-  margin-bottom: 175px;
-}
+  .slick-arrow {
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 2px solid $white;
+    outline: none;
+    top: 50%;
+    z-index: 10;
+    margin-top: -50px;
+  }
 
-.slick-arrow {
-  font-size: 0;
-  height: 50px;
-  width: 50px;
-  background-color: transparent;
-  border: 2px solid $white;
-  outline: none;
-  top: 50%;
-  z-index: 10;
-  margin-top: -50px;
-}
+  .slick-disabled {
+    border-color: $grey;
+  }
 
-.slick-disabled {
-  border-color: $grey;
-}
+  .slick-prev {
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    left: -2px;
+    //top: 50%;
+    //z-index: 10;
+    border-top: none;
+    border-right: none;
+  }
 
-.slick-prev {
-  transform: rotate(45deg) translateY(-50%);
-  position: absolute;
-  left: -2px;
-  //top: 50%;
-  //z-index: 10;
-  border-top: none;
-  border-right: none;
-}
-
-.slick-next {
-  transform: rotate(45deg) translateY(-50%);
-  position: absolute;
-  right: 24px;
-  //top: 50%;
-  //z-index: 10;
-  border-left: none;
-  border-bottom: none;
+  .slick-next {
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    right: 24px;
+    //top: 50%;
+    //z-index: 10;
+    border-left: none;
+    border-bottom: none;
+  }
 }
