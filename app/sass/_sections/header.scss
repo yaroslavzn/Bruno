@@ -155,34 +155,82 @@
     height: 50px;
     width: 50px;
     background-color: transparent;
-    border: 2px solid $white;
     outline: none;
     top: 50%;
     z-index: 10;
-    margin-top: -50px;
+    transform-origin: center;
+    border: none;
+    margin-top: -40px;
   }
 
-  .slick-disabled {
-    border-color: $grey;
+  .slick-disabled.slick-prev, .slick-disabled.slick-next {
+    &::before, &::after {
+      background-color: $grey;
+    }
   }
 
   .slick-prev {
-    transform: rotate(45deg) translateY(-50%);
+    transform: translateY(-50%);
     position: absolute;
-    left: -2px;
-    //top: 50%;
-    //z-index: 10;
-    border-top: none;
-    border-right: none;
+    left: 0;
+    width: 37px;
+    height: 85px;
+    &::before {
+      display: block;
+      content: '';
+      background-color: $white;
+      height: 55px;
+      width: 2px;
+      left: -1px;
+      position: absolute;
+      top: 50%;
+      transform-origin: left top;
+      transform: rotate(-40deg);
+    }
+    &::after {
+      display: block;
+      content: '';
+      background-color: $white;
+      height: 55px;
+      width: 2px;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform-origin: left top;
+      transform: rotate(220deg);
+    }
   }
 
   .slick-next {
-    transform: rotate(45deg) translateY(-50%);
+    transform: translateY(-50%) rotate(180deg);
     position: absolute;
-    right: 24px;
-    //top: 50%;
-    //z-index: 10;
-    border-left: none;
-    border-bottom: none;
+    right: 0;
+    width: 37px;
+    height: 85px;
+    //margin-left: 55px;
+    &::before {
+      display: block;
+      content: '';
+      background-color: $white;
+      height: 55px;
+      width: 2px;
+      left: -1px;
+      position: absolute;
+      top: 50%;
+      transform-origin: left top;
+      transform: rotate(-40deg);
+    }
+    &::after {
+      display: block;
+      content: '';
+      background-color: $white;
+      height: 55px;
+      width: 2px;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform-origin: left top;
+      transform: rotate(220deg);
+    }
   }
 }
