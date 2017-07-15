@@ -456,6 +456,11 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+.team__slider-item::after {
+  content: "";
+  display: block;
+  clear: both; }
+
 /* adjustment vars */
 html {
   font-size: 16px;
@@ -508,6 +513,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #090a0e;
   text-align: center;
   font-weight: normal;
+  margin: 0 auto;
   letter-spacing: -0.7px; }
 
 .header {
@@ -595,7 +601,9 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  padding: 10px 0; }
+  padding: 10px 0;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
   .nav__link:hover {
     color: #2b8bb6; }
 
@@ -604,7 +612,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 2.4%; }
+  margin-right: 2.4%;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
   .nav__link--tel:hover {
     color: #2b8bb6; }
 
@@ -803,10 +813,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0; }
 
 .services {
-  min-height: 645px;
+  min-height: 625px;
   background-image: url("../img/services-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   padding-top: 40px; }
 
 .section-title--services {
@@ -863,3 +874,122 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #6c7d87;
     color: #ffffff;
     border-color: transparent; }
+
+.team {
+  min-height: 560px; }
+
+.section-title--team {
+  width: 82.89%;
+  border-bottom: 1px solid #335263;
+  text-align: center;
+  padding-bottom: 0.875rem;
+  margin-bottom: 1.875rem; }
+
+.team-wrap {
+  width: 82.89%;
+  margin: 0 auto;
+  min-width: 0;
+  min-height: 0; }
+
+.team__slider-item {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#f1f1f1));
+  background: -webkit-linear-gradient(left, white 0%, #f1f1f1 100%);
+  background: linear-gradient(to right, white 0%, #f1f1f1 100%);
+  padding: 28px 68px 25px 0; }
+
+.team-item__pic {
+  width: 39%;
+  float: left; }
+
+.team-item__img {
+  width: 100%; }
+
+.team-item__desc {
+  float: right;
+  width: 55.02%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.team-item__title {
+  font-size: 2.25rem;
+  font-weight: normal;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 0.625rem; }
+
+.team-item__text {
+  width: 90%;
+  margin-bottom: 0.3125rem; }
+  .team-item__text p {
+    font-size: 1.5rem;
+    color: #2a3a47;
+    text-align: right;
+    line-height: 1.875rem; }
+
+.team-btn {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #090a0e;
+  border: 1px solid #6c7d87;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 0 0.625rem; }
+  .team-btn:hover {
+    background-color: #6c7d87;
+    color: #ffffff; }
+
+.team .slick-arrow {
+  font-size: 0;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: 2px solid #6c7d87;
+  outline: none;
+  top: 50%;
+  z-index: 10;
+  margin-top: -10px; }
+
+.team .slick-disabled {
+  border-color: #090a0e; }
+
+.team .slick-prev {
+  -webkit-transform: rotate(45deg) translateY(-50%);
+      -ms-transform: rotate(45deg) translateY(-50%);
+          transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  right: 100%;
+  border-top: none;
+  border-right: none;
+  margin-right: 55px; }
+
+.team .slick-next {
+  -webkit-transform: rotate(45deg) translateY(-50%);
+      -ms-transform: rotate(45deg) translateY(-50%);
+          transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  left: 100%;
+  border-left: none;
+  border-bottom: none;
+  margin-left: 20px; }
+
+.gallery {
+  min-height: 680px;
+  background-image: url("../img/gallery-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3.4375rem; }

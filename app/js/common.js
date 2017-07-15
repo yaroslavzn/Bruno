@@ -3,4 +3,7 @@ $(document).ready(function () {
         dots: true,
         infinite: false
     });
+    $('.team__slider').slick({
+        infinite: false
+    });
 });
