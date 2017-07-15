@@ -1,0 +1,21 @@
+@import "libs";
+@import "_misc/fonts";
+
+// adjustment variables
+$container-width: 1170px;
+$body-font: 'roboto_condensedlight', sans-serif;
+
+//colors
+$white: #ffffff;
+$black: #090a0e;
+$grey: #6c7d87;
+$blue: #2b8bb6;
+$darkblue: #2a3a47;
+
+// layout
+@import "_misc/mixins";
+@import "_misc/adjustment";
+
+// styles
+
+@import "_sections/header";
