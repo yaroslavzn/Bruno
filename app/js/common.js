@@ -15,4 +15,5 @@ $(document).ready(function () {
         infinite: false,
         slidesToShow: 3
     });
+
 });
