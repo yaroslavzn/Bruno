@@ -1,0 +1,76 @@
+.service-wrap {
+  @extend %clearfix;
+  margin-bottom: rem(50px);
+}
+
+.service__pic {
+  width: 40.26%;
+  float: left;
+  margin-top: rem(10px);
+  margin-right: rem(30px);
+  //margin-right: rem(32px);
+}
+
+.service__img {
+  width: 100%;
+  display: block;
+}
+
+.service__title-wrap {
+  border-bottom: 1px solid #335263;
+  float: right;
+  width: 57.10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: rem(10px);
+  margin-bottom: rem(8px);
+}
+
+.service-title {
+  font-size: rem(36px);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.service__price {
+  font-size: rem(24px);
+  border: 1px solid $black;
+  border-radius: 3px;
+  padding: 0 rem(10px);
+  text-transform: uppercase;
+}
+
+.service__text {
+  clear: right;
+  margin-bottom: rem(50px);
+  p {
+    font-size: rem(24px);
+    line-height: rem(29px);
+    text-align: justify;
+    margin: 30px 0;
+  }
+}
+
+.service__btn {
+  font-size: rem(24px);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black;
+  border: 1px solid #335263;
+  border-radius: 3px;
+  padding: 0 rem(15px);
+  transition: all .2s;
+  &:hover {
+    color: $white;
+    background-color: #335263;
+  }
+}
+
+.service-more {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-bottom: 1px solid #335263;
+  margin-bottom: rem(30px);
+}

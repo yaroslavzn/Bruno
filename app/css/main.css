@@ -464,7 +464,7 @@ th {
   font-weight: normal;
   font-style: normal; }
 
-.team__slider-item::after {
+.team__slider-item::after, .service-wrap::after {
   content: "";
   display: block;
   clear: both; }
@@ -1707,7 +1707,7 @@ h1, h2, h3, h4, h5, h6 {
 .category-wrap {
   margin-bottom: 0.3125rem; }
 
-.category-title {
+.category__main-title {
   font-size: 2.25rem;
   font-weight: normal;
   text-transform: uppercase;
@@ -1890,3 +1890,79 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: rotate(220deg) translateX(-50%);
         -ms-transform: rotate(220deg) translateX(-50%);
             transform: rotate(220deg) translateX(-50%); }
+
+.service-wrap {
+  margin-bottom: 3.125rem; }
+
+.service__pic {
+  width: 40.26%;
+  float: left;
+  margin-top: 0.625rem;
+  margin-right: 1.875rem; }
+
+.service__img {
+  width: 100%;
+  display: block; }
+
+.service__title-wrap {
+  border-bottom: 1px solid #335263;
+  float: right;
+  width: 57.10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0.625rem;
+  margin-bottom: 0.5rem; }
+
+.service-title {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: normal; }
+
+.service__price {
+  font-size: 1.5rem;
+  border: 1px solid #090a0e;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 0 0.625rem;
+  text-transform: uppercase; }
+
+.service__text {
+  clear: right;
+  margin-bottom: 3.125rem; }
+  .service__text p {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    text-align: justify;
+    margin: 30px 0; }
+
+.service__btn {
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #090a0e;
+  border: 1px solid #335263;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 0 0.9375rem;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
+  .service__btn:hover {
+    color: #ffffff;
+    background-color: #335263; }
+
+.service-more {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-bottom: 1px solid #335263;
+  margin-bottom: 1.875rem; }
