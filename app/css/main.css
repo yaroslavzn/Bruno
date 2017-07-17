@@ -1370,7 +1370,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 88px; }
+  min-height: 83px; }
 
 .footer__logo {
   font-size: 1.25rem;
