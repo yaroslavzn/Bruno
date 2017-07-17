@@ -83,6 +83,9 @@
 
 .nav__link--active {
   color: $grey;
+  &:hover {
+    color: $grey;
+  }
 }
 
 .nav__link--tel {

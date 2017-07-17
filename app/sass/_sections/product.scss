@@ -1,0 +1,137 @@
+.product-wrap {
+  @extend %clearfix;
+  margin-bottom: rem(50px);
+}
+
+.product__pic {
+  width: 31.75%;
+  float: left;
+  margin-top: rem(10px);
+  margin-right: rem(30px);
+  margin-bottom: rem(10px);
+}
+
+.product__img {
+  width: 100%;
+  display: block;
+}
+
+.product__title-wrap {
+  border-bottom: 1px solid #335263;
+  float: right;
+  width: 65.6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: rem(10px);
+  margin-bottom: rem(8px);
+}
+
+.product-title {
+  font-size: rem(36px);
+  line-height: rem(47px);
+  text-transform: uppercase;
+  font-weight: normal;
+  width: 84.49%;
+}
+
+.product__price {
+  font-size: rem(24px);
+  border: 1px solid $black;
+  border-radius: 3px;
+  padding: 0 rem(10px);
+  text-transform: uppercase;
+}
+
+.product__text {
+  clear: right;
+  margin-bottom: rem(50px);
+  p {
+    font-size: rem(24px);
+    line-height: rem(29px);
+    text-align: justify;
+    margin: 30px 0;
+  }
+}
+
+.product__btn {
+  font-size: rem(24px);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black;
+  border: 1px solid #335263;
+  border-radius: 3px;
+  padding: 0 rem(15px);
+  transition: all .2s;
+  &:hover {
+    color: $white;
+    background-color: #335263;
+  }
+}
+
+.title-more {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-bottom: 1px solid #335263;
+  margin-bottom: rem(30px);
+}
+
+.more-product__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.more-product__item {
+  width: 22.98%;
+  margin-bottom: rem(30px);
+}
+
+.more-product__link {
+  background-color: $white;
+  padding: 10px;
+  display: block;
+  box-shadow: 1px 2px 4px rgba(96, 107, 105, 0.75);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black;
+  text-align: center;
+  transition: all .2s;
+  &:hover {
+    transform: scale(1.09, 1.05);
+    .more-product__title {
+      text-decoration: underline;
+      color: $grey;
+    }
+    .more-product__btn {
+      border-color: transparent;
+      background-color: $grey;
+      color: $white;
+    }
+  }
+}
+
+.more-product__pic {
+  width: 100%;
+}
+
+.more-product__img {
+  width: 100%;
+}
+
+.more-product__title {
+  font-size: rem(18px);
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -0.3px;
+  margin-bottom: rem(8px);
+}
+
+.more-product__btn {
+  font-size: rem(18px);
+  border: 1px solid $grey;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 0 12px;
+}

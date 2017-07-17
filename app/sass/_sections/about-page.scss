@@ -30,13 +30,16 @@
   }
 }
 
-.breacrumbs__link {
+.breadcrumbs__link {
   color: $black;
   font-size: rem(18px);
   text-decoration: none;
+  span {
+    text-transform: uppercase;
+  }
 }
 
-.breacrumbs__link--active {
+.breadcrumbs__link--active {
   color: $grey;
 }
 
