@@ -30,6 +30,12 @@ body {
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   font-family: $body-font;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
 }
 
 .container {
@@ -55,6 +61,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+
+
 
 .section-title {
   font-size: rem(48px);

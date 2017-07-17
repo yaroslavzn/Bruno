@@ -16,4 +16,8 @@ $(document).ready(function () {
         slidesToShow: 3
     });
 
+    // Interier Slider
+    $('.interier__slide-list').slick({
+        dots: true
+    });
 });

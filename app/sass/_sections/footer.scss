@@ -2,15 +2,15 @@
   min-height: 105px;
   background-image: url('../img/footer-bg.png');
   background-repeat: repeat-x;
-  background-size: cover;
-  padding-top: rem(15px);
+  //background-size: cover;
+  padding-top: rem(22px);
 }
 
 .footer-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 105px;
+  min-height: 88px;
 }
 
 .footer__logo {
