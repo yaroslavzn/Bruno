@@ -1626,9 +1626,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .services--inner {
   background-image: url("../img/services-page-bg.jpg");
+  background-position: left top;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
+  background-size: cover; }
 
 .section-title--services-inner {
   margin-bottom: 0.9375rem; }
@@ -1698,7 +1698,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 12px; }
 
 .goods {
-  margin-bottom: -1.25rem; }
+  margin-bottom: -1.25rem;
+  background-image: url("../img/services-page-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .category-wrap {
   margin-bottom: 0.3125rem; }
