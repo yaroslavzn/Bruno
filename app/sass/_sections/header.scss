@@ -25,9 +25,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 16%;
+  max-width: 178px;
   min-height: 50px;
-  margin-right: 19.3%;
+  margin-right: 19.47%;
   &:hover {
     color: $blue;
     .logo__text {
@@ -39,7 +39,7 @@
 }
 
 .logo__text {
-  font-size: rem(36px);
+  font-size: 36px;
   width: 54.44%;
   position: relative;
   &::after {
@@ -56,20 +56,21 @@
 }
 
 .logo__text--small {
-  font-size: rem(14px);
-  line-height: rem(14px);
+  font-size: 14px;
+  line-height: 14px;
   width: 33.33%;
 }
 
 .nav__list {
+  width: 30%;
+  margin-right: 3.77%;
   display: flex;
-  width: 30.4%;
   justify-content: space-between;
-  margin-right: 3.4%;
 }
 
+
 .nav__link {
-  font-size: rem(20px);
+  font-size: 20px;
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
@@ -89,7 +90,7 @@
 }
 
 .nav__link--tel {
-  font-size: rem(20px);
+  font-size: 20px;
   color: $white;
   text-transform: uppercase;
   text-decoration: none;
@@ -101,7 +102,7 @@
 }
 
 .btn {
-  font-size: rem(20px);
+  font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: $white;
@@ -113,6 +114,64 @@
     background-color: $grey;
     border: 1px solid transparent;
   }
+}
+
+.contacts-btn {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  display: none;
+  &::after {
+    display: block;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: $white;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  &::before {
+    display: block;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: $white;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.contacts-btn--active {
+  .btn-dot {
+    display: none;
+  }
+  &::after {
+    width: 26px;
+    transform: rotate(135deg) translateX(0);
+    left: -1px;
+    top: 10px;
+  }
+  &::before {
+    width: 26px;
+    transform: rotate(45deg) translateX(0);
+    left: -1px;
+    top: 10px;
+  }
+}
+
+.btn-dot {
+  width: 4px;
+  height: 4px;
+  background-color: $white;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .header__slide-item {
@@ -139,7 +198,7 @@
   }
 
   .slick-dots {
-    width: 5%;
+    max-width: 64px;
     position: absolute;
     bottom: rem(27px);
     left: 50%;

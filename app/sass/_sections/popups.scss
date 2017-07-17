@@ -1,0 +1,50 @@
+.contacts-popup {
+  width: 210px;
+  background-color: $white;
+  font-size: 18px;
+  position: absolute;
+  top: 60px;
+  border-radius: 3px;
+  padding: 15px;
+  display: none;
+}
+
+.contacts-popup--active {
+  display: block;
+  right: 5px;
+}
+
+.contacts-popup__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.contacts-popup__item {
+  margin-bottom: 6px;
+}
+
+.contacts-popup__tel {
+  text-decoration: none;
+  color: $black;
+}
+
+.contacts-popup__btn {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+  border: 1px solid #667882;
+  border-radius: 3px;
+  &:hover {
+    background-color: $darkblue;
+    border-color: $darkblue;
+    color: $white;
+  }
+}

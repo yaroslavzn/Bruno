@@ -25,4 +25,18 @@ $(document).ready(function () {
     $('.category__list').slick({
         slidesToShow: 4
     });
+
+    // Contacts Popup
+    var openPopupBtn = $('.contacts-btn');
+    var contactsPopup = $('.contacts-popup');
+
+    openPopupBtn.on('click', function(e) {
+        e.preventDefault();
+        contactsPopup.toggleClass('contacts-popup--active');
+    })
+
+    openPopupBtn.on('click', function(e) {
+        e.preventDefault();
+        openPopupBtn.toggleClass('contacts-btn--active');
+    })
 });
