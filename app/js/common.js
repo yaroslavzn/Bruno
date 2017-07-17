@@ -20,4 +20,9 @@ $(document).ready(function () {
     $('.interier__slide-list').slick({
         dots: true
     });
+
+    // Category Slider
+    $('.category__list').slick({
+        slidesToShow: 4
+    });
 });
