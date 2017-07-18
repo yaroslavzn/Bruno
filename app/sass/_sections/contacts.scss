@@ -1,14 +1,15 @@
 .contacts {
   min-height: 600px;
-  padding-top: rem(30px);
-  padding-bottom: rem(30px);
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-image: url('../img/contacts-bg.png');
   background-repeat: no-repeat;
   background-position: 30px bottom;
+  position: relative;
 }
 
 .section-title--contacts {
-  margin-bottom: rem(35px);
+  margin-bottom: 35px;
 }
 
 .contacts-wrap {
@@ -19,11 +20,11 @@
 }
 
 .contacts__item {
-  font-size: rem(36px);
+  font-size: 36px;
   color: $darkblue;
-  margin-bottom: rem(40px);
+  margin-bottom: 40px;
   .fa {
-    margin-right: rem(15px);
+    margin-right: 15px;
   }
 }
 
@@ -37,7 +38,11 @@
 .contacts__map {
   background-image: url('../img/contacts-map.jpg');
   background-repeat: no-repeat;
-  min-height: rem(300px);
-  width: 63.5%;
-  margin-right: rem(-150px);
+  background-size: contain;
+  width: 636px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 140px;
+  min-height: 403px;
 }
