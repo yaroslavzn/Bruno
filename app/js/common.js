@@ -38,9 +38,45 @@ $(document).ready(function () {
 
     // Category Slider
     $('.category__list').slick({
-        slidesToShow: 4
+        slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 861,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 601,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 401,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
+    // Services mobile slider
+
+    function servicesSliderStart(){
+        $('.services__list').slick({
+
+        });
+    }
+
+    function servicesSlider(){
+        var $windowWidth = $(window).width();
+        if ($windowWidth < 541) {
+            servicesSliderStart();
+        }
+    }
+
+    servicesSlider();
     // Contacts Popup
     var openPopupBtn = $('.contacts-btn');
     var contactsPopup = $('.contacts-popup');
