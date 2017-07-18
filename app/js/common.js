@@ -13,7 +13,22 @@ $(document).ready(function () {
     // Section Gallery Slider
     $('.gallery__list').slick({
         infinite: false,
-        slidesToShow: 3
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 920,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+
+        ]
     });
 
     // Interier Slider

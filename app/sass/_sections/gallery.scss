@@ -38,7 +38,7 @@
 .gallery__item-pic {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: rem(20px);
+  margin-bottom: 20px;
 }
 
 .gallery__item-img {
@@ -46,23 +46,23 @@
 }
 
 .gallery__item-title {
-  font-size: rem(24px);
+  font-size: 24px;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: -0.3px;
   text-align: center;
-  margin-bottom: rem(27px);
+  margin-bottom: 27px;
 }
 
 .gallery__item-btn {
-  font-size: rem(20px);
+  font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
   border: 1px solid $grey;
   border-radius: 3px;
   display: inline-block;
-  padding: 0 rem(10px);
+  padding: 0 10px;
   transition: all .2s;
   &:hover {
     color: $white;
