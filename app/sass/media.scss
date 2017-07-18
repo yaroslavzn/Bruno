@@ -6,6 +6,18 @@
   }
 }
 
+@media (max-width: 1166px) {
+  /* Service */
+  .service__pic {
+    width: 39%;
+  }
+
+  .service__title-wrap {
+    width: 58%;
+  }
+
+}
+
 @media (max-width: 1162px) {
   /* Header */
   .logo {
@@ -66,6 +78,17 @@
     p {
       color: $black;
     }
+  }
+}
+
+@media (max-width: 1034px) {
+  /* Service */
+  .service__pic {
+    width: 35%;
+  }
+
+  .service__title-wrap {
+    width: 60.7%;
   }
 }
 
@@ -454,6 +477,13 @@
       }
     }
   }
+
+  /* Service */
+
+  .service-title {
+    width: 80%;
+  }
+
 }
 
 @media (max-width: 860px) {
@@ -627,6 +657,46 @@
       text-align: left;
     }
   }
+
+  /* Service */
+
+  .service-wrap {
+    margin-top: 20px;
+  }
+
+  .service__pic {
+    float: none;
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .service__title-wrap {
+    width: 100%;
+    float: none;
+  }
+
+  .service-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .service__price {
+    position: static;
+    float: right;
+  }
+
+  .service__text {
+    clear: none;
+    p {
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+
+  /* Hover slider scale links */
+
+  
 }
 
 @media (max-width: 670px) {
@@ -1000,6 +1070,106 @@
   /* Product */
 
   .product {
+    .slick-arrow {
+      font-size: 0;
+      height: 40px;
+      width: 40px;
+      background-color: transparent;
+      outline: none;
+      top: 0;
+      z-index: 10;
+      transform-origin: center;
+      border: none;
+      margin-top: -20px;
+      &:hover {
+        background-color: #465662;
+        &::after, &::before {
+          background-color: $white;
+        }
+      }
+    }
+
+    .slick-disabled.slick-prev, .slick-disabled.slick-next {
+      &::before, &::after {
+        background-color: $black;
+      }
+    }
+
+    .slick-prev {
+      position: absolute;
+      left: 20px;
+      top: 100%;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $grey;
+      border-radius: 3px;
+      margin-right: 0px;
+      &::before {
+        display: block;
+        content: '';
+        background-color: $black;
+        height: 19px;
+        width: 1px;
+        left: 10px;
+        position: absolute;
+        top: 50%;
+        transform-origin: left top;
+        transform: rotate(-40deg);
+      }
+      &::after {
+        display: block;
+        content: '';
+        background-color: $black;
+        height: 20px;
+        width: 1px;
+        left: 10px;
+        position: absolute;
+        top: 50%;
+        transform-origin: left top;
+        transform: rotate(220deg) translateX(-50%);
+      }
+    }
+
+    .slick-next {
+      position: absolute;
+      right: 20px;
+      top: 100%;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $grey;
+      border-radius: 3px;
+      margin-left: -40px;
+      transform: rotate(180deg);
+      &::before {
+        display: block;
+        content: '';
+        background-color: $black;
+        height: 19px;
+        width: 1px;
+        left: 10px;
+        position: absolute;
+        top: 50%;
+        transform-origin: left top;
+        transform: rotate(-40deg);
+      }
+      &::after {
+        display: block;
+        content: '';
+        background-color: $black;
+        height: 20px;
+        width: 1px;
+        left: 10px;
+        position: absolute;
+        top: 50%;
+        transform-origin: left top;
+        transform: rotate(220deg) translateX(-50%);
+      }
+    }
+  }
+
+  /* Service */
+
+  .service {
     .slick-arrow {
       font-size: 0;
       height: 40px;
@@ -1517,7 +1687,6 @@
   /* Product */
   .product-wrap {
     width: 100%;
-    margin-bottom: 1px;
   }
 
   .product__pic {
@@ -1525,6 +1694,10 @@
     width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+
+  .product__title-wrap {
+    margin-bottom: 15px;
   }
 
   .product-title {
@@ -1553,4 +1726,50 @@
   .more-product__list {
     margin-bottom: 29px;
   }
+
+  /* Service */
+
+  .service-wrap {
+    width: 100%;
+  }
+
+  .service__pic {
+    max-width: 284px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .service__title-wrap {
+    margin-bottom: 15px;
+  }
+
+  .service-title {
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: -0.7px;
+  }
+
+  .service__text {
+    margin-bottom: 25px;
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .service__link {
+    padding: 25px;
+  }
+
+  .title-more {
+    margin-bottom: 10px;
+  }
+
+  .reg__btn {
+    font-size: 22px;
+    padding: 7px 30px;
+  }
+
 }
