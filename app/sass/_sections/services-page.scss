@@ -3,11 +3,10 @@
   background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
-  //min-height: 770px;
 }
 
 .section-title--services-inner {
-  margin-bottom: rem(15px);
+  margin-bottom: 15px;
 }
 
 .services__list {
@@ -18,7 +17,7 @@
 
 .services__item {
   width: 22.98%;
-  margin-bottom: rem(30px);
+  margin-bottom: 30px;
 }
 
 .services__link {
@@ -47,7 +46,7 @@
 
 .services__pic {
   width: 100%;
-  margin-bottom: rem(8px);
+  margin-bottom: 8px;
 }
 
 .services__img {
@@ -55,16 +54,16 @@
 }
 
 .services__title {
-  font-size: rem(24px);
+  font-size: 24px;
   font-weight: 300;
   text-align: center;
   letter-spacing: -0.3px;
-  margin-bottom: rem(15px);
+  margin-bottom: 15px;
   text-align: center;
 }
 
 .services__btn {
-  font-size: rem(18px);
+  font-size: 18px;
   border: 1px solid $grey;
   border-radius: 3px;
   display: inline-block;

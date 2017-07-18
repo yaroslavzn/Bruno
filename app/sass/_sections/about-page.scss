@@ -6,22 +6,22 @@
 }
 
 .nav--inner {
-  margin-bottom: rem(11px);
+  margin-bottom: 11px;
 }
 
 .breadcrumbs__list {
   display: flex;
-  margin-bottom: rem(4px);
-  margin-top: rem(11px);
+  margin-bottom: 4px;
+  margin-top: 11px;
 }
 
 .breadcrumbs__item {
-  margin-right: rem(10px);
+  margin-right: 10px;
   &::after {
     display: inline-block;
     content: '/';
-    font-size: rem(18px);
-    margin-left: rem(10px);
+    font-size: 18px;
+    margin-left: 10px;
   }
 
   &:last-child {
@@ -33,7 +33,7 @@
 
 .breadcrumbs__link {
   color: $black;
-  font-size: rem(18px);
+  font-size: 18px;
   text-decoration: none;
   span {
     text-transform: uppercase;
@@ -47,12 +47,12 @@
 /* Interier */
 
 .section-title--interier {
-  margin-bottom: rem(15px);
+  margin-bottom: 15px;
 }
 
 .interier {
-  margin-top: rem(-8px);
-  margin-bottom: rem(-10px);
+  margin-top: -8px;
+  margin-bottom: -10px;
 }
 
 .interier__slide-pic {
@@ -72,7 +72,7 @@
 
 .interier {
   .slick-dots {
-    width: 5.87%;
+    max-width: 64px;
     margin: 0 auto;
     position: absolute;
     bottom: 26px;
