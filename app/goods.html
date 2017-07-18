@@ -9,14 +9,18 @@
 <body>
     <div class="wrapper">
         <header class="header header--inner">
-            <nav class="nav nav--inner">
+            <nav class="nav">
                 <div class="container">
                     <div class="nav-wrap">
+                        <a href="#" class="menu-btn"></a>
                         <a href="index.html" class="logo">
                             <span class="logo__text">Bruno</span>
                             <span class="logo__text--small">Мужские стрижки</span>
                         </a>
                         <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link nav__link--sub">Запись онлайн</a>
+                            </li>
                             <li class="nav__item">
                                 <a href="about.html" class="nav__link">О нас</a>
                             </li>
@@ -24,7 +28,7 @@
                                 <a href="services.html" class="nav__link">Услуги</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link nav__link--active">Товары</a>
+                                <a href="goods.html" class="nav__link">Товары</a>
                             </li>
                             <li class="nav__item">
                                 <a href="contacts.html" class="nav__link">Контакты</a>
@@ -32,6 +36,9 @@
                         </ul>
                         <a href="tel:380967185747" class="nav__link--tel">+38 (096) 718-57-47</a>
                         <a href="#" class="btn">Запись онлайн</a>
+                        <a href="#" class="contacts-btn">
+                            <span class="btn-dot"></span>
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -268,6 +275,29 @@
             </div>
         </div>
     </footer>
+    <div class="contacts-popup">
+        <ul class="contacts-popup__list">
+            <li class="contacts-popup__item">
+                <a href="tel:380967185747" class="contacts-popup__tel">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span class="contacts-popup__text">+38-(096)-718-57-47</span>
+                </a>
+            </li>
+            <li class="contacts-popup__item">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span class="contacts__item-text">г. Киeв, Бассейная, 9</span>
+            </li>
+            <li class="contacts-popup__item contacts-popup__item--small">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <span class="contacts__item-text">10<sup>00</sup> - 20<sup>00</sup></span>
+            </li>
+            <li class="contacts-popup__item contacts-popup__item--small">
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                <span class="contacts__item-text">Пн - Вс</span>
+            </li>
+        </ul>
+        <a href="#" class="contacts-popup__btn">Записаться</a>
+    </div>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>

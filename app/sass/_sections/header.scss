@@ -82,6 +82,10 @@
   }
 }
 
+.nav__link--sub {
+  display: none;
+}
+
 .nav__link--active {
   color: $grey;
   &:hover {
@@ -174,6 +178,14 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
+.menu-btn {
+  width: 30px;
+  height: 26px;
+  background-image: url('../img/menu-btn.png');
+  background-repeat: no-repeat;
+  display: none;
+}
+
 .header__slide-item {
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
@@ -238,7 +250,6 @@
     z-index: 10;
     transform-origin: center;
     border: none;
-
   }
 
   .slick-disabled.slick-prev, .slick-disabled.slick-next {

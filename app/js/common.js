@@ -33,10 +33,21 @@ $(document).ready(function () {
     openPopupBtn.on('click', function(e) {
         e.preventDefault();
         contactsPopup.toggleClass('contacts-popup--active');
-    })
+    });
 
     openPopupBtn.on('click', function(e) {
         e.preventDefault();
         openPopupBtn.toggleClass('contacts-btn--active');
+    });
+
+    //  Mobile Menu
+
+    var menuBtn = $('.menu-btn');
+    var menu = $('.nav__list');
+
+    menuBtn.on('click', function (e) {
+        e.preventDefault();
+        menu.toggleClass('nav__list--active');
+        menuBtn.toggleClass('menu-btn--close');
     })
 });
