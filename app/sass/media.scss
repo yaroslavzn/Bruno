@@ -611,7 +611,6 @@
   .contacts__map {
     width: 100%;
     float: none;
-    margin: 0 auto;
   }
 
 }
@@ -728,6 +727,11 @@
   }
 
   /* Header */
+  .nav {
+    width: 100%;
+  }
+
+
   .logo {
     margin-left: -20px;
   }
@@ -832,6 +836,16 @@
     padding: 5px 10px;
   }
 
+  .gallery {
+    .slick-slide {
+      margin: 0 20px;
+    }
+
+    .slick-list {
+      margin: 0 -20px;
+    }
+  }
+
   /* Contacts */
 
   .contacts {
@@ -866,7 +880,9 @@
   }
 
   .contacts__map {
-    min-height: 203px;
+    height: 203px;
+    min-height: 0;
+    background-size: cover;
   }
 
   /* Footer */
