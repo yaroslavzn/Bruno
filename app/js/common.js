@@ -61,6 +61,7 @@ $(document).ready(function () {
         ]
     });
 
+
     // Services mobile slider
 
     function servicesSliderStart(){
@@ -77,6 +78,24 @@ $(document).ready(function () {
     }
 
     servicesSlider();
+
+    // Product Slider
+
+    function productSliderStart(){
+        $('.more-product__list').slick({
+
+        });
+    }
+
+    function productSlider(){
+        var $windowWidth = $(window).width();
+        if ($windowWidth < 541) {
+            productSliderStart();
+        }
+    }
+
+    productSlider();
+
     // Contacts Popup
     var openPopupBtn = $('.contacts-btn');
     var contactsPopup = $('.contacts-popup');
