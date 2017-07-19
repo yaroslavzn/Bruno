@@ -1516,6 +1516,9 @@ h1, h2, h3, h4, h5, h6 {
   .footer__nav-link:hover {
     color: #2b8bb6; }
 
+.footer__nav-link--active {
+  color: #6c7d87; }
+
 .footer__social-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3443,6 +3446,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1px; }
   .services-btn {
     padding: 3px 10px; }
+    .services-btn:hover {
+      background-color: #2a3a47;
+      color: #ffffff; }
   /* Team */
   .team {
     margin-top: -10px;
@@ -3476,6 +3482,10 @@ h1, h2, h3, h4, h5, h6 {
   .gallery__item-link {
     padding: 25px;
     padding-bottom: 20px; }
+    .gallery__item-link:hover {
+      -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+              transform: scale(1, 1); }
   .gallery__item-pic {
     margin-bottom: 16px; }
   .gallery__item-title {
@@ -3485,6 +3495,9 @@ h1, h2, h3, h4, h5, h6 {
   .gallery__item-btn {
     font-size: 22px;
     padding: 5px 10px; }
+    .gallery__item-btn:hover {
+      background-color: #2a3a47;
+      color: #ffffff; }
   .gallery .slick-slide {
     margin: 0 20px; }
   .gallery .slick-list {
@@ -3564,6 +3577,17 @@ h1, h2, h3, h4, h5, h6 {
   .services__link {
     padding: 25px;
     padding-bottom: 20px; }
+    .services__link:hover {
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
+      .services__link:hover .services__title {
+        color: #090a0e;
+        text-decoration: none; }
+      .services__link:hover .services__btn {
+        border-color: transparent;
+        background-color: #2a3a47;
+        color: #ffffff; }
   .services__title {
     margin-bottom: 12px; }
   .services__pic {
@@ -3583,6 +3607,17 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0; }
   .category__link {
     padding: 25px; }
+    .category__link:hover {
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
+      .category__link:hover .category__title {
+        text-decoration: none;
+        color: #090a0e; }
+      .category__link:hover .category__btn {
+        border-color: transparent;
+        background-color: #2a3a47;
+        color: #ffffff; }
   .category__pic {
     margin-bottom: 12px; }
   .category__title {
@@ -3745,4 +3780,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px; }
   .reg__btn {
     font-size: 22px;
-    padding: 7px 30px; } }
+    padding: 7px 30px; }
+    .reg__btn:hover {
+      background-color: #2a3a47; } }

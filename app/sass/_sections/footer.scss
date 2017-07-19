@@ -64,6 +64,10 @@
   }
 }
 
+.footer__nav-link--active {
+  color: $grey;
+}
+
 .footer__social-list {
   display: flex;
   width: 7.5%;
