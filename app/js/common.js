@@ -125,9 +125,9 @@ function initMap() {
     });
     var marker = new google.maps.Marker({
         position: uluru,
-        map: map,
-        title: 'вулиця Басейна, 9'
+        map: map
     });
+
 }
 
 initMap();
