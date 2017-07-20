@@ -1,10 +1,4 @@
 $(document).ready(function () {
-    // Header Slider
-    $('.header__slide-list').slick({
-        dots: true,
-        infinite: false
-    });
-
     // Section Team Slider
     $('.team__slider').slick({
         infinite: false
@@ -119,5 +113,21 @@ $(document).ready(function () {
         e.preventDefault();
         menu.toggleClass('nav__list--active');
         menuBtn.toggleClass('menu-btn--close');
-    })
+    });
 });
+
+function initMap() {
+    var uluru = {lat: 50.440758, lng: 30.523000};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: uluru,
+        scrollwheel: false
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'вулиця Басейна, 9'
+    });
+}
+
+initMap();

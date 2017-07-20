@@ -729,23 +729,26 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   display: none; }
 
-.header__slide-item {
+.header-pic {
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 651px;
+  height: 100vh;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
-.slide__img-wrap {
-  max-width: 22.75rem;
-  margin: 0 auto;
-  margin-top: 180px; }
+.header__logo {
+  max-width: 364px;
+  margin: 0 auto; }
 
-.slide__img {
+.header__logo-img {
   width: 100%; }
 
 .header .slick-slider {
@@ -1434,14 +1437,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #2a3a47; }
 
 .contacts__map {
-  background-image: url("../img/contacts-map.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 636px;
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 140px;
+  margin-top: 140px; }
+
+#map {
+  width: 100%;
   min-height: 403px; }
 
 .footer {
@@ -2296,7 +2299,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1240px) {
   /* Contacts */
   .contacts__map {
-    width: 536px; } }
+    width: 500px; } }
 
 @media (max-width: 1166px) {
   /* Service */
@@ -2349,7 +2352,14 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 3px;
     padding: 10px; }
     .features__text p {
-      color: #090a0e; } }
+      color: #090a0e; }
+  /* Map */
+  .contacts__map {
+    position: static;
+    margin: 0 auto;
+    float: right;
+    margin-top: 0;
+    width: 75%; } }
 
 @media (max-width: 1034px) {
   /* Service */
@@ -2609,13 +2619,7 @@ h1, h2, h3, h4, h5, h6 {
   .contacts {
     overflow: hidden; }
   .contacts__item {
-    font-size: 30px; }
-  .contacts__map {
-    position: static;
-    margin: 0 auto;
-    float: right;
-    margin-top: 0;
-    width: 75%; } }
+    font-size: 30px; } }
 
 @media (max-width: 920px) {
   /* Gallery */
@@ -3537,6 +3541,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 203px;
     min-height: 0;
     background-size: cover; }
+  #map {
+    min-height: 203px; }
   /* Footer */
   .footer-wrap {
     -webkit-box-align: start;

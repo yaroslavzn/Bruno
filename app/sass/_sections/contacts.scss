@@ -36,13 +36,16 @@
 }
 
 .contacts__map {
-  background-image: url('../img/contacts-map.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 636px;
   position: absolute;
   top: 0;
   right: 0;
   margin-top: 140px;
+
+}
+
+
+#map {
+  width: 100%;
   min-height: 403px;
 }

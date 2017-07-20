@@ -42,30 +42,14 @@
                     </div>
                 </div>
             </nav>
-            <div class="header-content">
-                <ul class="header__slide-list">
-                    <li class="header__slide-item">
-                        <div class="slide__img-wrap">
-                            <img src="img/slide-logo.png"
-                                 alt="Бруно - мужские стрижки"
-                                 class="slide__img">
-                        </div>
-                    </li>
-                    <li class="header__slide-item">
-                        <div class="slide__img-wrap">
-                            <img src="img/slide-logo.png"
-                                 alt="Бруно - мужские стрижки"
-                                 class="slide__img">
-                        </div>
-                    </li>
-                    <li class="header__slide-item">
-                        <div class="slide__img-wrap">
-                            <img src="img/slide-logo.png"
-                                 alt="Бруно - мужские стрижки"
-                                 class="slide__img">
-                        </div>
-                    </li>
-                </ul>
+            <div class="header-pic">
+                <div class="container">
+                    <div class="header__logo">
+                        <img src="img/slide-logo.png"
+                             alt="Бруно - мужские стрижки"
+                             class="header__logo-img">
+                    </div>
+                </div>
             </div>
         </header>
         <section class="services">
@@ -298,7 +282,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="contacts__map"></div>
+            <div class="contacts__map">
+                <div id="map"></div>
+            </div>
         </section>
 	</div>
     <footer class="footer">
@@ -363,5 +349,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5XVesVdtoOKVHdSJOA9E-TJW2I-1JMhI&callback=initMap">
+    </script>
 </body>
 </html>

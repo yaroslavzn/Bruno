@@ -185,22 +185,22 @@
   display: none;
 }
 
-.header__slide-item {
+.header-pic {
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 651px;
+  height: 100vh;
   align-items: center;
+  display: flex;
 }
 
-.slide__img-wrap {
-  max-width: rem(364px);
+.header__logo {
+  max-width: 364px;
   margin: 0 auto;
-  margin-top: 180px;
 }
 
-.slide__img {
+.header__logo-img {
   width: 100%;
 }
 .header {

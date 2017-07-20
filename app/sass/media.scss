@@ -2,7 +2,7 @@
   /* Contacts */
 
   .contacts__map {
-    width: 536px;
+    width: 500px;
   }
 }
 
@@ -78,6 +78,16 @@
     p {
       color: $black;
     }
+  }
+
+  /* Map */
+
+  .contacts__map {
+    position: static;
+    margin: 0 auto;
+    float: right;
+    margin-top: 0;
+    width: 75%;
   }
 }
 
@@ -370,14 +380,6 @@
 
   .contacts__list {
     //margin: 0 auto;
-  }
-
-  .contacts__map {
-    position: static;
-    margin: 0 auto;
-    float: right;
-    margin-top: 0;
-    width: 75%;
   }
 }
 
@@ -1480,6 +1482,10 @@
     height: 203px;
     min-height: 0;
     background-size: cover;
+  }
+
+  #map {
+    min-height: 203px;
   }
 
   /* Footer */
